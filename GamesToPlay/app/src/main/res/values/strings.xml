@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Games To Play</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_listgames">List of Games</string>
+    <string name="title_rategames">Game Ratings</string>
+    <string name="title_addgame">Add Game</string>
+    <string name="listgames">List Games</string>
+    <string name="rategames">Rate Games</string>
+    <string name="cdGameImg">Game Image</string>
+    <string name="cdGameTitle">Game Title</string>
+    <string name="cdGameFinished">Game Finished</string>
+    <string name="cdGameFinishedShort">Finished</string>
+    <string name="cdGameConsole">Game Console</string>
+    <string name="cdGameRating">Game Rating</string>
+    <string name="cdAddGame">Add Game</string>
+    <string name="empty"></string>
+    <string-array name="strArrRatings">
+        <item>Unrated</item>
+        <item>0 Stars</item>
+        <item>1 Star</item>
+        <item>2 Stars</item>
+        <item>3 Stars</item>
+        <item>4 Stars</item>
+        <item>5 Stars</item>
+    </string-array>
+
+</resources>

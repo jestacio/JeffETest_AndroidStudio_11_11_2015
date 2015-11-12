@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_gravity="start"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/imgGameImg"
+        android:layout_width="72dp"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/cdGameImg"
+        android:padding="0dp"
+        android:src="@drawable/gameimg_destiny" />
+
+    <TextView
+        android:id="@+id/txtGameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgGameImg"
+        android:layout_toRightOf="@+id/imgGameImg"
+        android:layout_toStartOf="@+id/imgStar5"
+        android:layout_toLeftOf="@+id/imgStar5"
+        android:contentDescription="@string/cdGameTitle"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:singleLine="true"
+        android:textSize="20sp"
+        android:text="@string/cdGameTitle" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtGameConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtGameTitle"
+        android:layout_alignLeft="@+id/txtGameTitle"
+        android:layout_toEndOf="@+id/imgGameImg"
+        android:layout_toRightOf="@+id/imgGameImg"
+        android:contentDescription="@string/cdGameTitle"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:singleLine="true"
+        android:text="@string/cdGameConsole"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinnerGameRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgStar5"
+        android:layout_alignStart="@+id/imgStar5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end"
+        android:layout_toEndOf="@+id/txtGameConsole"
+        android:layout_toRightOf="@+id/txtGameConsole"
+        android:contentDescription="@string/cdGameRating"
+        android:gravity="end"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgStar1"
+        android:contentDescription="@string/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtGameTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_star_rate_white_18dp" />
+
+    <ImageView
+        android:id="@+id/imgStar2"
+        android:contentDescription="@string/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtGameTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imgStar1"
+        android:layout_toLeftOf="@+id/imgStar1"
+        android:src="@drawable/ic_star_rate_white_18dp" />
+
+    <ImageView
+        android:id="@+id/imgStar3"
+        android:contentDescription="@string/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtGameTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imgStar2"
+        android:layout_toLeftOf="@+id/imgStar2"
+        android:src="@drawable/ic_star_rate_white_18dp" />
+
+    <ImageView
+        android:id="@+id/imgStar4"
+        android:contentDescription="@string/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtGameTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imgStar3"
+        android:layout_toLeftOf="@+id/imgStar3"
+        android:src="@drawable/ic_star_rate_white_18dp" />
+
+    <ImageView
+        android:id="@+id/imgStar5"
+        android:contentDescription="@string/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtGameTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imgStar4"
+        android:layout_toLeftOf="@+id/imgStar4"
+        android:src="@drawable/ic_star_rate_white_18dp" />
+
+
+</RelativeLayout>

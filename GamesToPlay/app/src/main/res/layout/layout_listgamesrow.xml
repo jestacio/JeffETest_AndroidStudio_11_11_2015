@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_gravity="start"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/imgGameImg"
+        android:layout_width="72dp"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/cdGameImg"
+        android:padding="0dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtGameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imgGameImg"
+        android:layout_toRightOf="@+id/imgGameImg"
+        android:contentDescription="@string/cdGameTitle"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:singleLine="true"
+        android:text="@string/cdGameTitle"
+        android:textSize="20sp" >
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/cbGameFinished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtGameConsole"
+        android:clickable="true"
+        android:enabled="true"
+        android:text="@string/cdGameFinishedShort"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtGameConsole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtGameTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtGameTitle"
+        android:layout_toEndOf="@+id/imgGameImg"
+        android:layout_toRightOf="@+id/imgGameImg"
+        android:contentDescription="@string/cdGameTitle"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:singleLine="true"
+        android:text="@string/cdGameConsole"
+        android:textSize="14sp" />
+
+</RelativeLayout>
